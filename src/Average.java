@@ -17,3 +17,26 @@ public class Average {
         calculateMean();
     }
 
+    public void calculateMean() {
+        int total = 0;
+        for (int i = 0; i < data.length; i++) {
+            total += data[i];
+        }
+        mean = (double) total / data.length;
+    }
+
+    public void selectionSort() {
+        for (int i = 0; i < data.length - 1; i++) {
+            int maxIndex = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[j] > data[maxIndex]) {
+                    maxIndex = j;
+                }
+            }
+
+            int temp = data[i];
+            data[i] = data[maxIndex];
+            data[maxIndex] = temp;
+        }
+    }
+}
