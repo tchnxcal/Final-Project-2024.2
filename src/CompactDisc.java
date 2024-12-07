@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class CompactDisc {
     public static void main(String[] args) throws IOException {
-        Scanner input = new Scanner(new File("Classics.txt"));
+        Scanner input = new Scanner(new File("C:/Users/dreya/ideaProjects/FinalProject2024.2/src/Classics.txt"));
         String title;
         String artist;
 
