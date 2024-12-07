@@ -39,4 +39,14 @@ public class Average {
             data[maxIndex] = temp;
         }
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Scores in descending order: ");
+        for (int i = 0; i < data.length; i++) {
+            sb.append(data[i]).append(" ");
+        }
+        sb.append("\nMean: ").append(mean);
+        return sb.toString();
+    }
 }
